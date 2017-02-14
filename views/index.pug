@@ -3,3 +3,14 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+
+  ul
+    for post in posts
+      .postContainer
+        .blogContainer
+          p= post.tags
+          p= post.title
+          p= post.snippet
+          p= post.post_date
+        .imageContainer
+          img( src=post.image_url )

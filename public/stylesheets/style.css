@@ -1,8 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(218, 218, 215);
 }
 
 a {
   color: #00B7FF;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  padding: 1%;
+}
+.postContainer  {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  margin: 1% 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.postContainer img {
+  width: 300px;
+  height: auto;
 }
