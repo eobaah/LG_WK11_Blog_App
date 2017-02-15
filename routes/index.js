@@ -6,14 +6,39 @@ const moment = require ( 'moment' )
 
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express', posts: [] });
-});
-
-router.get('/test', (req, res) => {
+router.get('/', (request, response) => {
   getAllPosts().then( posts => {
-    res.render('index', { posts } )
+    response.render('index', { posts } )
   })
 })
+
+router.get('/:id', ( request, response ) => {
+  getPost( request.params.id )
+  .then( post => {
+    response.json( post )
+  })
+})
+
+router.post( '/create', (request, response, next ) => {
+  const newPost = request.body
+  createPost( newPost )
+    .then( () => response.redirect('/') )
+})
+
+router.post( '/delete/:id', ( request, response, next ) => {
+  const id = request.params.id
+  deletePost( id )
+    .then( () => response.redirect('/') )
+})
+
+router.post( '/edit/:id', ( request, response, next ) => {
+  const id = request.params.id
+  const blogPost = request.body
+  editPost( id, blogPost)
+  .then( () => {
+    response.redirect('/')
+  })
+})
+
 
 module.exports = router;

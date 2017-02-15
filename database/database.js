@@ -32,7 +32,7 @@ const editPost = ( id, post ) => {
 }
 
 const deletePost = id =>
-  db.none( `DELETE FROM posts WHERE id=$1`, [ id ] )
+  db.one( `DELETE FROM posts WHERE id=$1`, [ id ] )
 
 module.exports = {
   db,

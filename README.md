@@ -49,7 +49,7 @@ Optional for those wishing to add a database to their blog site: [SQL Basics tra
 |Day| Mon | Tues | Wed | Thurs | Fri | Sat |Sun|
 |------------|------------|------------|------------|------------|------------|------------ |------------ |
 ||setup server; create schema and connect to the database; implement CRUD; display content in app| finish CRUD; design UI |complete CRUD; focus on UI and UX; implement react|implement react|implement react|||
-|Time|0 hrs|0 hrs|0 hrs|0 hrs|0 hrs|TBD|TBD
+|Time|5 hrs|6 hrs|0 hrs|0 hrs|0 hrs|TBD|TBD
 
 
 
