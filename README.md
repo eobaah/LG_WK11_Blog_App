@@ -14,29 +14,29 @@ Creating this web application will provide exposure to:
 - React as a stretch goal
 
 ## Specifications (100% total) [Github](https://github.com/CoffeeMakesMorningsBetter/LG_WK11_Blog_App)
-- [ ] Make a wireframe of app (5%)
+- [X] Make a wireframe of app (5%)
 - [ ] Use responsive design principles (make it mobile first!)(5%)
 
 ## User should be able to:
 - [ ] See a feed of recent blog posts. (3%)
-- [ ] Click on a specific blog post excerpt to be taken to the full blog post. (3%)
-- [ ] Each blog post should have a title, author, summary/caption, blog text, picture (optional), date published/updated, tags, and comments. (4%)
+- [X] Click on a specific blog post excerpt to be taken to the full blog post. (3%)
+- [X] Each blog post should have a title, author, summary/caption, blog text, picture (optional), date published/updated, tags, and comments. (4%)
 
 ### Required
-- [ ] Edit blog post by clicking a button (26%)
-- [ ] Delete blog post by clicking a button (26%)
-- [ ] Add a new blog post from a front-end user interface (28%)
-- [ ] The artifact produced is properly licensed, preferably with the  [MIT license](https://opensource.org/licenses/MIT).
+- [X] Edit blog post by clicking a button (26%)
+- [X] Delete blog post by clicking a button (26%)
+- [X] Add a new blog post from a front-end user interface (28%)
+- [X] The artifact produced is properly licensed, preferably with the  [MIT license](https://opensource.org/licenses/MIT).
 
 ## Quality Rubric (100% total)
 - [ ] Provide instructions for a reviewer to download a fully functioning version of the app (10%)
-- [ ] Submit a Prrr per day to improve code quality (10%)
-- [ ] All code submissions are peer reviewed via GitHub PR  by at least two members of the team, and master is always in a stable state (tests passed, site functions) (20%)
-- [ ] Variables, functions, css classes, etc. are meaningfully named (no comments exist in code to explain functionality - the names serve that function) (20%)
-- [ ] Code is well organized into a meaningful file  structure (20%)
-- [ ] Interface is user friendly (10%)
-- [ ] Create tests to ensure routes are fully functioning (5%)
-- [ ] Create tests to ensure our database queries are able to retrieve all posts (5%)
+- [X] Submit a Prrr per day to improve code quality (10%)
+- [X] All code submissions are peer reviewed via GitHub PR  by at least two members of the team, and master is always in a stable state (tests passed, site functions) (20%)
+- [X] Variables, functions, css classes, etc. are meaningfully named (no comments exist in code to explain functionality - the names serve that function) (20%)
+- [X] Code is well organized into a meaningful file  structure (20%)
+- [X] Interface is user friendly (10%)
+- [X] Create tests to ensure routes are fully functioning (5%)
+- [X] Create tests to ensure our database queries are able to retrieve all posts (5%)
 
 ## Resources
 Below, a set of recommended tutorials on Treehouse that take you through most of this process:
@@ -49,7 +49,7 @@ Optional for those wishing to add a database to their blog site: [SQL Basics tra
 |Day| Mon | Tues | Wed | Thurs | Fri | Sat |Sun|
 |------------|------------|------------|------------|------------|------------|------------ |------------ |
 ||setup server; create schema and connect to the database; implement CRUD; display content in app| finish CRUD; design UI |complete CRUD; focus on UI and UX; implement react|implement react|implement react|||
-|Time|5 hrs|6 hrs|0 hrs|0 hrs|0 hrs|TBD|TBD
+|Time|5 hrs|6 hrs|7 hrs|7 hrs|5 hrs|TBD|TBD
 
 
 
