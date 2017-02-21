@@ -1,0 +1,30 @@
+{
+  "name": "blogapp",
+  "version": "1.0.0",
+  "description": "Blog application using PERN stack",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "moment": "^2.17.1"
+  },
+  "devDependencies": {
+    "react-scripts": "0.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eobaah/LG_WK11_Blog_App.git"
+  },
+  "author": "Eugene Baah & Mark Suzuki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eobaah/LG_WK11_Blog_App/issues"
+  },
+  "homepage": "https://github.com/eobaah/LG_WK11_Blog_App#readme"
+}
