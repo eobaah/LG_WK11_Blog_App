@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(218, 218, 215);
+}
+
+  .postContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .imageContainer {
+    display: flex;
+    flex-direction: column;
+    order: -1;
+  }
+  .postImage {
+    width: 300px;
+    height: 200px;
+    align-self: center;
+  }
+  .postContent {
+    padding: 2%;
+  }
+
+  .styleDeleteBtn {
+    background: none;
+    border: none;
+    padding:0;
+    cursor: pointer;
+    color: #069;
+    text-decoration: underline;
+  }
+
+  .tagsDateWrapper p{
+    display: inline-block;
+  }
+  
+  .postDate {
+    margin: 0 2% 0 0;
+  }
+
+
+@media (min-width: 768px) {
+
+  .postContainer{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .postImage {
+    width: 300px;
+    height: auto;
+  }
+
+  .postContainer {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 2% 0;
+  }
+  .postContent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tagsDateWrapper {
+    display: flex;
+    flex-direction: row;
+  }
+}

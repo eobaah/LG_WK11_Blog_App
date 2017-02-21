@@ -1,0 +1,84 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  a.i.fa.fa-pencil-square-o.createPostButton(href='#openModal1') Create Post
+  #openModal1.modalDialog
+    .modalPost
+      a.close(href='#close', title='Close') X
+      form(action='/create' method='POST')
+        .header Enter data for your blog
+          .formFields
+            .formTitle.formBox
+              label Title
+              input.createInput(type='text', name='title', placeholder='Title for your post')
+            .formAuthor.formBox
+              label Author
+              input.createInput(type='text', name='author', placeholder='Who are you?')
+            .formCaption.formBox
+              label Caption
+              textarea.createInput(rows='4', name='snippet', placeholder='Short summary')
+            .formContent.formBox
+              label Content
+              textarea.createInput(rows='4', name='blog_entry', placeholder='Enter blog post')
+            .formImage.formBox
+              label Image
+              input.createInput(type='text', name='image_url', placeholder='Enter image url')
+            .formTags.formBox
+              label Tags
+              input.createInput(type='text', name='tags', placeholder='tags')
+            button(type='submit', value='Submit' formmethod='post') Save blog post
+  ul
+    for post in posts
+      .postContainer
+        .blogContainer
+          h1= post.title
+          p= post.snippet
+          .blogDetails
+            p= normalizeDate(post.post_date)
+            p= post.tags
+        .imageContainer
+          img( src=post.image_url )
+          button.readMore
+            a.openReadMore(href=`#${post.id}moreDetails`) Read more
+          .buttonsEditDelete
+            form(action=`/delete/${post.id}` method='POST' )
+              button(type="submit" value="delete") Delete
+            a.i.fa.fa-pencil-square-o.editPostButton(href=`#${post.id}ModalEdit`) Edit Post
+          .modalDialog(id=`${post.id}ModalEdit`)
+            .modalPost
+              a.close(href='#close', title='Close') X
+              form(action=`/edit/${post.id}` method='POST')
+                .header Enter data for your blog
+                  .formFields
+                    .formTitle.formBox
+                      label Title
+                      input.createInput(type='text', name='title', value=post.title)
+                    .formCaption.formBox
+                      label Caption
+                      textarea.createInput(rows='4', name='snippet') #{post.snippet}
+                    .formContent.formBox
+                      label Content
+                      textarea.createInput(rows='4', name='blog_entry') #{post.blog_entry}
+                    .formImage.formBox
+                      label Image
+                      input.createInput(type='text', name='image_url', value=post.image_url)
+                    .formTags.formBox
+                      label Tags
+                      input.createInput(type='text', name='tags', value=post.tags)
+                    button(type='submit', value='Submit' formmethod='post') Save Changes
+      .modalDialog(id=`${post.id}moreDetails`)
+        .modalContainer
+          a.close(href='#close', title='Close') X
+          .modalTitle
+            h2= post.title
+          .modalImage
+            img( src=post.image_url )
+          .modalText
+            p= post.blog_entry
+          .modalBottom
+            .modalDate
+              p= post.post_date
+            .modalTags
+              p= post.tags
